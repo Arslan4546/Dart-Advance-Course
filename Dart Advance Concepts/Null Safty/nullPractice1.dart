@@ -22,3 +22,14 @@
 // }
 
 //output : Unhandeled Exception
+
+// void main(List<String> args) {
+//   int? x;
+//   int? y = x;
+//   print(y);
+// }
+
+//output:null
+
+//iss mai ye hia k nullable nullable ko assign ho rha hai to iss mai koi masla ni hai
+
