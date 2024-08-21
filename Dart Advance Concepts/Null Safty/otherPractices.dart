@@ -16,24 +16,26 @@
 
 //iss mai basically student class ka ik variable banaya hai s or main function mai ager s null hai to new instance create kr dia hai Student Class ka
 
-Student? s;
-void main(List<String> args) {
-  // Student student = Student();
-  // student.name = "hannan";
-  // student.rollNo = 23;
-  // Student student = Student()
-  //   ..name = "Hannan"
-  //   ..rollNo = 45;
-  // print(student.name);
+// Student? s;
+// void main(List<String> args) {
+//   // Student student = Student();
+//   // student.name = "hannan";
+//   // student.rollNo = 23;
+//   // Student student = Student()
+//   //   ..name = "Hannan"
+//   //   ..rollNo = 45;
+//   // print(student.name);
 
-  s ??= Student();
-  s
-    ?..name = "Mannan"
-    ..rollNo = 45;
-  print(s?.name);
-}
+//   s ??= Student();
+//   s
+//     ?..name = "Mannan"
+//     ..rollNo = 45;
+//   print(s?.name);
+// }
 
-class Student {
-  int rollNo = 12;
-  String name = "Arslan";
-}
+// class Student {
+//   int rollNo = 12;
+//   String name = "Arslan";
+// }
+
+
