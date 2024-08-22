@@ -13,7 +13,7 @@
 
 //output: null
 
-//ager dono variable null safe hain to wo ik dosry ko assign ho skty hain
+//ager dono variable nullable hain to wo ik dosry ko assign ho skty hain
 
 // int? nullAable;
 
