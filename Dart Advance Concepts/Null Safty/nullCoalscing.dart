@@ -10,9 +10,7 @@
 //   print(nullSafe);
 // }
 
-
 //output: this simply means ager nullable k pass koi value hai to wo nullsafe ko assign ho skti hai otherwise 43 assign ho jye gee measn k idhr just like condition lgee hai k ager nullable mai koi value hai to wo whi assign ho jyee otherwise 43 assign ho jyee
-
 
 //Another Example
 
@@ -22,9 +20,25 @@
 //   // Using the null-coalescing operator to provide a default value
 //   String displayName = name ?? 'Guest';
 
-//   print(displayName); 
+//   print(displayName);
+// }
+
+// Output: Guest
+
+// void main() {
+//   String? name; // This variable is null
+
+//   // Using the null-coalescing operator to provide a default value
+//   String displayName = name ??= 'Guest';
+//   String dispName = name ?? 'Guest';
+
+//   print(displayName);
+//   print(dispName);
 // }
 
 
 // Output: Guest
+
+// iss mai ye hai k null aware assignment operator or null coalscing operator takreban same he kam krty hian
+
 

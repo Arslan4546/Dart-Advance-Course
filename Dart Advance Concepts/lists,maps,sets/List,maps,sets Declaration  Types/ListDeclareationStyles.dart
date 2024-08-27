@@ -36,6 +36,7 @@ void main(List<String> args) {
   // list4[1] = 78; //  you can add item into this  list4 manually
   //this is the declaration of list4 without any specific keyword
   // print(list4);
+  //this means we can only assing integer values into the list4
 
   // declaring list with const keyword and not mentioning List<int> with the list reference
   const list5 = <int>[1, 2, 3, 4, 5];
@@ -67,14 +68,15 @@ void main(List<String> args) {
   //this is the declaration of list9 without any specific keyword
   //print(list9);
   //print(list9.runtimeType); // (dyamic) becasue we cannot mentioned any specific keyword
+  // it means you can add every thing in the list9
 
   // declaring list without mentioning any data type with list reference and list template
-  var list10 = [1, 2, 3, 4, 5, 6.6];
+  var list10 = [1, 2, 3, 4, 5, 6.6, "Arslan"];
   //list10 = list1; // you can assign any list to the list10
   //list10[1] = 78; //  you can add item into this  list10 manually
   //this is the declaration of list10 with the var keyword
   //print(list10);
-  //print(list10.runtimeType); // num becasue we can add both int and double
+  print(list10.runtimeType); // num becasue we can add both int and double
 
   // declaring list with const keyword
   const List<int> list11 = <int>[1, 2, 3, 4, 5];

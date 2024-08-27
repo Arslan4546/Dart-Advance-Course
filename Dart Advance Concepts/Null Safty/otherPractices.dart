@@ -38,15 +38,6 @@
 //   String name = "Arslan";
 // }
 
-// class DB {
-//   static DB? _instance;
-
-//   DB._internal() {}
-
-//   static DB getInstance() {
-//     return _instance ??= DB._instance();
-//   }
-// }
 
 // Dart Code for creating an object using null aware assginment operator , generally in dart language assignment operator can eliminate the if, else condition and make the code easy and readable
 

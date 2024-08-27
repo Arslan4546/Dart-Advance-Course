@@ -13,7 +13,7 @@
 
 //output : 12,Arslan, Male
 
-//basically hum late uss varibale k sath lagaty huty hain jiss ki hum bad mai initialize kr skyn but late variable hum jab tak initialize nhi krynn gy tab tk humm oss ko print nhi krva skty or without uss ki initialzation k error dy ga program
+//basically hum late uss varibale k sath lagaty huty hain jiss ki hum bad mai initialize kr skyn but late variable hum jab tak initialize nhi krynn gy tab tk humm oss ko print nhi krva skty or without uss ki declaration k error dy ga program
 
 
 // Another Example 

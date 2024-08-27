@@ -8,7 +8,8 @@
 // void main(List<String> args) {
 //   int? x; //null-able variale
 
-//   int y = x; // give error
+//   int? y = x; // out put will be null
+//   int y = x; // will givve a compile time error
 //   print(x);
 // }
 
@@ -17,7 +18,7 @@
 // void main(List<String> args) {
 //   int? x; //null-able variale
 
-//   int y = x!; // not give an error
+//   int y = x!; // not give a compile time error but runtime
 //   print(y);
 // }
 
