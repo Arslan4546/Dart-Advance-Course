@@ -1,0 +1,129 @@
+Types Of Function:
+
+Functions are the block of code that performs a specific task. Here are different types of functions:
+
+1. No Parameter And No Return Type
+2. Parameter And No Return Type
+3. No Parameter And Return Type
+4. Parameter And Return Type
+5. Function With No Parameter And No Return Type
+
+In this function, you do not pass any parameter and expect no return type. Here is an example of it:
+
+
+==> No Parameter & No Return Type
+
+Here printName() is a function which prints name on screen.
+
+void main() {
+  printName();
+}
+
+void printName() {
+  print("My name is John Doe.");
+}
+
+ Show Output
+
+In this program, printName() is the function which has keyword void. It means it has no return type, and the empty pair of parentheses implies that there is no parameter that is passed to the function.
+
+==> Function With Parameter And No Return Type
+
+In this function, you do pass the parameter and expect no return type. Here is an example of it:
+
+Example 1: Parameter & No Return Type
+
+Here printName(String name) is a function which welcome person.
+
+void main() {
+  printName("John");
+}
+
+void printName(String name) {
+  print("Welcome, ${name}.");
+}
+
+ Show Output
+
+In this program, printName(String name) is the function which has keyword void. It means it has no return type, and the pair of parentheses is not empty but this time that suggests it to accept an parameter.
+
+
+==> No Parameter & Return Type
+
+Here primeMinisterName() is a function which returns prime minister name. In the entire program, anyone can use this function to find the name of the prime minister.
+
+void main() {
+// Function With No Parameter & Return Type
+  String name = primeMinisterName();
+  print("The Name from function is $name.");
+}
+String primeMinisterName() {
+  return "John Doe";
+}
+
+
+ Show Output
+
+In this program, primeMinisterName() is the function which has String keyword before function name, means it return String value, and the empty pair of parentheses suggests that there is no parameter that is passed to the function.
+
+
+
+==> Parameter & Return Type
+
+Here add(int a, int b) is a function that returns its sum in integer. We can display results in our main function.
+
+// this function add two numbers
+int add(int a, int b) {
+  int sum = a + b;
+  return sum;
+}
+
+void main() {
+  int num1 = 10;
+  int num2 = 20;
+
+  int total = add(num1, num2);
+  print("The sum is $total.");
+}
+
+ Show Output
+
+In this program, int add(int a, int b) is the function with int as the return type, and the pair of parenthesis has two parameters, i.e., a and b.
+
+==> **Complete Example **
+Here is the program, which includes all types of functions we studied earlier.
+
+// parameter and return type
+int add(int a, int b) {
+  var total;
+  total = a + b;
+  return total;
+}
+
+// parameter and no return type
+void mul(int a, int b) {
+  var total;
+  total = a * b;
+  print("Multiplication is : $total");
+}
+
+// no parameter and return type
+String greet() {
+  String greet = "Welcome";
+  return greet;
+}
+
+// no parameter and no return type
+void greetings() {
+  print("Hello World!!!");
+}
+
+void main() {
+  var total = add(2, 3);
+  print("Total sum: $total");
+  mul(2, 3);
+  var greeting = greet();
+  print("Greeting: $greeting");
+  greetings();
+
+}

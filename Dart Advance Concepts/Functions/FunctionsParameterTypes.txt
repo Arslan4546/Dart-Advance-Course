@@ -1,0 +1,83 @@
+Parameter In Dart:
+
+The parameter is the process of passing values to the function. The values passed to the function must match the number of parameters defined. A function can have any number of parameters.
+
+// here a and b are parameters
+
+void add(int a, int b) { 
+} 
+
+==> Positional Parameter In Dart
+In positional parameters, you must supply the arguments in the same order as you defined on parameters when you wrote the function. If you call the function with the parameter in the wrong order, you will get the wrong result.
+
+--> Use Of Positional Parameter
+
+In the example below, the function printInfo takes two parameters. You must pass the person’s name and gender in the same order. If you pass values in the wrong order, you will get the wrong result.
+
+void printInfo(String name, String gender) {
+  print("Hello $name your gender is $gender.");
+}
+
+void main() {
+  // passing values in wrong order
+  printInfo("Male", "John");
+
+  // passing values in correct order
+  printInfo("John", "Male");
+
+}
+
+--> Providing Default Value On Positional Parameter
+
+In the example below, function printInfo takes two positional parameters and one optional parameter. The title parameter is optional here. If the user doesn’t pass the title, it will automatically set the title value to sir/ma’am.
+
+void printInfo(String name, String gender, [String title = "sir/ma'am"]) {
+  print("Hello $title $name your gender is $gender.");
+}
+
+void main() {
+  printInfo("John", "Male");
+  printInfo("John", "Male", "Mr.");
+  printInfo("Kavya", "Female", "Ms.");
+}
+
+==> Named Parameter In Dart
+
+Dart allows you to use named parameters to clarify the parameter’s meaning in function calls. Curly braces {} are used to specify named parameters.
+
+--> Use Of Named Parameter
+In the example below, function printInfo takes two named parameters. You can pass value in any order. You will learn about ? in null safety section.
+
+void printInfo({String? name, String? gender}) {
+  print("Hello $name your gender is $gender.");
+}
+
+void main() {
+  // you can pass values in any order in named parameters.
+  printInfo(gender: "Male", name: "John");
+  printInfo(name: "Sita", gender: "Female");
+  printInfo(name: "Reecha", gender: "Female");
+  printInfo(name: "Reecha", gender: "Female");
+  printInfo(name: "Harry", gender: "Male");
+  printInfo(gender: "Male", name: "Santa");
+}
+
+
+
+--> Use Of Required In Named Parameter
+
+In the example below, function printInfo takes two named parameters. You can see a required keyword, which means you must pass the person’s name and gender. If you don’t pass it, it won’t work.
+
+void printInfo({required String name, required String gender}) {
+  print("Hello $name your gender is $gender.");
+}
+
+void main() {
+  // you can pass values in any order in named parameters.
+  printInfo(gender: "Male", name: "John");
+  printInfo(gender: "Female", name: "Suju");
+}
+
+Note:
+
+You can pass the value in any order in the named parameter. ? is used to remove null safety, which we will discuss in the coming chapter.
