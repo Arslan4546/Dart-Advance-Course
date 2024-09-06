@@ -55,6 +55,14 @@ void main(List<String> args) {
 
   // ==> Map Method:
 
+// void main() {
+//   List<int> list = [10, 20, 30, 40, 50];
+//   var douledList = list.map((n) => n * 2);
+
+//   print((douledList));
+// }
+// Basically map method k mtlab hai k ik list sy dosri list nikalna apni requirment k mutabiq
+
   // var subList1 = list
   //     .map(
   //       (e) => e.length,

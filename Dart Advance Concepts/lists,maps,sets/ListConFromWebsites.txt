@@ -1,0 +1,14 @@
+About List Concepts:
+
+1) by default sary collection dart mai heterogeneous hoty hain mtlab un mai humm different type ki values rakhva skty hain
+
+2) hum in ko homogenous bna skty hain by using generics. the generics makes the type-safe collections.
+
+3) List<int> = []; the <int> is called generics which are used to make the typ-safe any collection like list, map, and set.
+
+4)subscript operator ([])
+
+5)jab bhi hum collection k litrals mai koi if condition ya loop lagaty hian to uss ko control-flow operators kehty hain
+
+6)mutable means wo list jo change ho jyee or immutable means ow list jo change na ho jesy kissi list k sat hager const lga ho to wo change ni ho skti
+
