@@ -39,10 +39,10 @@ void main(List<String> args) {
 
 // ==> FirstWhere Method:
 
-//   var subList = list.firstWhere(
-//     (element) => element.length > 6,
-//   );
-//   print(subList);
+  var subList = list.firstWhere(
+    (element) => element.length > 5,
+  );
+  print(subList);
 
 // ==> LastWhere Method:
 

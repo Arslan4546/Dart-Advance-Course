@@ -39,10 +39,6 @@
 //   return "You first name is : $firstName and you last name is $LastName";
 // }
 
-
-
-
-
 // Part 2
 
 // typedef bwpTypeDef = String Function(String);
@@ -91,18 +87,67 @@
 // }
 
 // Explanation:
- 
+
 // typedef:
 // is used to create type aliases for function signatures, making the code more readable and maintainable.
-// bwpTypeDef: 
+// bwpTypeDef:
 // Represents a function that takes a String argument and returns a String.
-// lahoreTypeDef: 
+// lahoreTypeDef:
 // Represents a function that takes no arguments and returns void.
-// mltTypeDef: 
+// mltTypeDef:
 // Represents a function that takes two int arguments and returns an int.
-// krchTypeDef: 
+// krchTypeDef:
 // Represents a function that takes two String arguments and returns a String.
 
-// Basically humm typeDef iss lyee use krty hain ta k function ussi type k parameters ly jesa wo expect kr rha hota hai ager uss ko different type k arguments dy gy to wo ussi time compile time error dy dy ga iss ka ye bohat bar faida hai type def ka 
+// Basically humm typeDef iss lyee use krty hain ta k function ussi type k parameters ly jesa wo expect kr rha hota hai ager uss ko different type k arguments dy gy to wo ussi time compile time error dy dy ga iss ka ye bohat bar faida hai type def ka
+
+// Examples of Higher order functions
+
+// typedef addFun = int Function(int, int);
+// typedef subFun = num Function(num, num);
+
+// void main(List<String> args) {
+//   num result = mainFun(add, sub);
+
+//   print(result);
+// }
+
+// int add(int a, int b) {
+//   return a + b;
+// }
+
+// num sub(int a, int b) {
+//   return a - b;
+// }
+
+// num mainFun(Function f1, Function f2) {
+//   return f2(12, 34);
+// }
 
 
+// Another Example of Higher order Functions
+
+// typedef sumType = int Function(int, int);
+// typedef printMyNameType = String Function(String);
+
+// void main(List<String> args) {
+//   String result = mainFun(sum);
+//   print(result);
+  
+// }
+
+// int sum(int a, int b) {
+//   return a + b;
+// }
+
+// String printMyName(String name) {
+//   return name;
+// }
+
+// String mainFun(sumType s) {
+//   if (s(10, 11) == 20) {
+//     return printMyName("Arslan");
+//   } else {
+//     return printMyName("Mannan");
+//   }
+// }
