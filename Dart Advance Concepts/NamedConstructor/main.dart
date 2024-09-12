@@ -1,4 +1,4 @@
-import 'Student.dart';
+//import 'Student.dart';
 
 // Student Class main fun
 
@@ -24,13 +24,13 @@ import 'Student.dart';
 //   print("${p3.name}, ${p3.age}"); // Output: Charlie, 30
 // }
 
-void main(List<String> args) {
-  Map<String, dynamic> m = {
-    "Name ": "Arslan",
-    "Age": 21,
-  };
-  Student s = Student.fromMap(m);
+// void main(List<String> args) {
+//   Map<String, dynamic> m = {
+//     "Name ": "Arslan",
+//     "Age": 21,
+//   };
+//   Student s = Student.fromMap(m);
 
-  print(s.name);
-  print(s.age);
-}
+//   print(s.name);
+//   print(s.age);
+// }

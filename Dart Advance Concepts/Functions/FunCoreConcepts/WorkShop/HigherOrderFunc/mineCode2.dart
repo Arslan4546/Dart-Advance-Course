@@ -14,4 +14,3 @@ outerFunc() {
 }
 
 /// you can also creat the inner function inside the the function and call the inner fuction simply written as in th above code
-/// 
