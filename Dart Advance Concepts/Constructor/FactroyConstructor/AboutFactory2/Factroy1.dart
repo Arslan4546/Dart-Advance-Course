@@ -36,12 +36,12 @@ class MyClass {
   static MyClass? _cachedInstance;
 
   // Private named constructor to create the instance internally
-  MyClass._internal(this.value);
+  MyClass._(this.value);
 
   // Factory constructor
   factory MyClass(int value) {
     // If an instance already exists, return it instead of creating a new one
-    return _cachedInstance ??= MyClass._internal(value);
+    return _cachedInstance ??= MyClass._(value);
   }
 }
 
@@ -63,3 +63,4 @@ void main() {
 // If it doesn't exist, it creates a new one using the private named constructor (_internal).
 // If an instance already exists, it returns the cached instance.
 // In this example, obj1 == obj2 evaluates to true because the same cached instance is returned for both obj1 and obj2.
+
