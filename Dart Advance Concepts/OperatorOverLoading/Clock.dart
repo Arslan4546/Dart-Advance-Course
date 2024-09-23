@@ -54,6 +54,5 @@ class Clock {
         minutes == other.minutes &&
         seconds == other.seconds);
   }
-
   // same iss mai bhi whi logic use hoga
 }
