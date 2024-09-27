@@ -1,6 +1,11 @@
-class Animal {
+class Animal implements Walker {
   void sleep() {
     print("Animal is sleeping");
+  }
+
+  @override
+  void walk() {
+    print("this is the animal voice ");
   }
 }
 
@@ -26,7 +31,7 @@ mixin HumanBehavior on Animal, Walker {
 // Now, this class satisfies both conditions:
 // 1. It extends Animal
 // 2. It implements Walker
-class Human extends Animal with Walker, HumanBehavior {}
+class Human extends Animal with HumanBehavior {}
 // this  show the error because
 
 void main() {

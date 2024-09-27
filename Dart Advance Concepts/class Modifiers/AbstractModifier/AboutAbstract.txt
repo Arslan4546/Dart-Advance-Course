@@ -1,0 +1,42 @@
+==> abstract
+To define a class that doesn't require a full, concrete implementation of its entire interface, use the abstract modifier.
+
+Abstract classes cannot be constructed from any library, whether its own or an outside library. Abstract classes often have abstract methods.
+
+==> a.dart
+
+abstract class Vehicle {
+  void moveForward(int meters);
+}
+
+
+
+==> b.dart
+
+import 'a.dart';
+
+// Error: Can't be constructed.
+Vehicle myVehicle = Vehicle();
+
+// Can be extended.
+class Car extends Vehicle {
+  int passengers = 4;
+
+  @override
+  void moveForward(int meters) {
+    // ...
+  }
+}
+
+// Can be implemented.
+class MockVehicle implements Vehicle {
+  @override
+  void moveForward(int meters) {
+    // ...
+  }
+}
+
+// ager ap apni class  k sath abstract ka keyword lagaty hian to ap outside the side the class uss ka object ni bna skty but uss ko extends or implements kr skty hian
+
+
+If you want your abstract class to appear to be instantiable, define a factory constructor.

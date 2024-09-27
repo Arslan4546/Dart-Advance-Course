@@ -1,0 +1,33 @@
+interface
+
+To define an interface, use the interface modifier. Libraries outside of the interface's own defining library can implement the interface, but not extend it. This guarantees:
+
+When one of the class's instance methods calls another instance method on this, it will always invoke a known implementation of the method from the same library.
+Other libraries can't override methods that the interface class's own methods might later call in unexpected ways. This reduces the fragile base class problem.
+a.dart
+interface class Vehicle {
+  void moveForward(int meters) {
+    // ...
+  }
+}
+
+b.dart
+import 'a.dart';
+
+// Can be constructed.
+Vehicle myVehicle = Vehicle();
+
+// ERROR: Can't be inherited.
+class Car extends Vehicle {
+  int passengers = 4;
+  // ...
+}
+
+// Can be implemented.
+class MockVehicle implements Vehicle {
+  @override
+  void moveForward(int meters) {
+    // ...
+  }
+}
+// iss ka mtlab hai k iss ka object ban jata hai or implement bhi ho jata hai but extends ni kr skty iss known

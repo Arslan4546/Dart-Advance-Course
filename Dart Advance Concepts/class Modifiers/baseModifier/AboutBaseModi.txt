@@ -1,0 +1,40 @@
+base
+
+To enforce inheritance of a class or mixin's implementation, use the base modifier. A base class disallows implementation outside of its own library. This guarantees:
+
+The base class constructor is called whenever an instance of a subtype of the class is created.
+All implemented private members exist in subtypes.
+A new implemented member in a base class does not break subtypes, since all subtypes inherit the new member.
+This is true unless the subtype already declares a member with the same name and an incompatible signature.
+You must mark any class which implements or extends a base class as base, final, or sealed. This prevents outside libraries from breaking the base class guarantees.
+
+a.dart
+base class Vehicle {
+  void moveForward(int meters) {
+    // ...
+  }
+}
+
+
+b.dart
+import 'a.dart';
+
+// Can be constructed.
+Vehicle myVehicle = Vehicle();
+
+// Can be extended.
+base class Car extends Vehicle {
+  int passengers = 4;
+  // ...
+}
+
+// ERROR: Can't be implemented.
+base class MockVehicle implements Vehicle {
+  @override
+  void moveForward() {
+    // ...
+  }
+}
+
+// mtlab base class ka object bhi ban jata hai or extends bhi ho jata but implements ni ho skti
+
