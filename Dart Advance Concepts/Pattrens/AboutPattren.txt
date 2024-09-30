@@ -1,0 +1,31 @@
+==> Patterns
+
+Patterns are a syntactic category in the Dart language, like statements and expressions. A pattern represents the shape of a set of values that it may match against actual values.
+
+This page describes:
+
+What patterns do.
+Where patterns are allowed in Dart code.
+What the common use cases for patterns are.
+To learn about the different kinds of patterns, visit the pattern types page.
+
+What patterns do
+In general, a pattern may match a value, destructure a value, or both, depending on the context and shape of the pattern.
+
+First, pattern matching allows you to check whether a given value:
+
+Has a certain shape.
+Is a certain constant.
+Is equal to something else.
+Has a certain type.
+
+Then, pattern destructuring provides you with a convenient declarative syntax to break that value into its constituent parts. The same pattern can also let you bind variables to some or all of those parts in the process.
+
+
+You can use patterns in several places in the Dart language:
+
+
+1) Local variable declarations and assignments
+2) for and for-in loops
+3) if-case and switch-case
+4) Control flow in collection literals
