@@ -1,0 +1,14 @@
+==> Pattern types
+This page is a reference for the different kinds of patterns. For an overview of how patterns work, where you can use them in Dart, and common use cases, visit the main Patterns page.
+
+==> Pattern precedence
+Similar to operator precedence, pattern evaluation adheres to precedence rules. You can use parenthesized patterns to evaluate lower-precedence patterns first.
+
+This document lists the pattern types in ascending order of precedence:
+
+Logical-or patterns are lower-precedence than logical-and, logical-and patterns are lower-precedence than relational patterns, and so on.
+
+Post-fix unary patterns (cast, null-check, and null-assert) share the same level of precedence.
+
+The remaining primary patterns share the highest precedence. Collection-type (record, list, and map) and Object patterns encompass other data, so are evaluated first as outer-patterns.
+
