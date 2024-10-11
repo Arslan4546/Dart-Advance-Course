@@ -4,6 +4,7 @@ void main(List<String> args) async {
   await for (var i in generateNumber(100)) {
     print(i);
   }
+  // ye cheez iss ko automatically listen bhi kr rhi hai
 }
 
 // Iterable<int> GenNo(int max) sync* {
@@ -31,3 +32,6 @@ Stream<int> generateNumber(int max) {
   }
   return streamController.stream;
 }
+// ye function generative ni hai but ye controller k through stream ko sink krti hai or ye 2 method sy sink hoee hai
+
+
