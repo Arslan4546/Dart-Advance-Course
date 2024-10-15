@@ -4,6 +4,7 @@ void main(List<String> args) async {
   await for (var i in generateNumber(100)) {
     print(i);
   }
+
   // ye cheez iss ko automatically listen bhi kr rhi hai
 }
 
@@ -19,6 +20,7 @@ void main(List<String> args) async {
 //     yield i;
 //   }
 // }
+
 
 Stream<int> generateNumber(int max) {
   StreamController<int> streamController = StreamController<int>();
