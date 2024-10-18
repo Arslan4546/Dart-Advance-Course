@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'a.dart';
 
 // Can be constructed.
@@ -17,4 +15,5 @@ class MockVehicle implements Vehicle {
   void moveForward(int meters) {
     // ...
   }
+}
   // it means you cannot extends or implements the final class but also create that class objeCreateTimerHandler

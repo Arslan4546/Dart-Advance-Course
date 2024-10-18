@@ -1,0 +1,5 @@
+class Vehicle {
+  void moveForward() {
+    // ...
+  }
+}
