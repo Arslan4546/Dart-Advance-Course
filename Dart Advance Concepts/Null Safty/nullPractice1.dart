@@ -13,7 +13,7 @@
 //   print(x);
 // }
 
-//output:error
+//output:error // ap ik nullable ko dosry nullable mai assignment kr skty hain jesy line 11 mai kia gya hai 
 
 // void main(List<String> args) {
 //   int? x; //null-able variale
@@ -22,7 +22,8 @@
 //   print(y);
 // }
 
-//output : Unhandeled Exception
+//output : Unhandeled Exception // iss mai ye nullsafe ko jhooti tasalli dy rha hai k tension na ly ana wali value null ni hain
+
 
 // void main(List<String> args) {
 //   int? x;

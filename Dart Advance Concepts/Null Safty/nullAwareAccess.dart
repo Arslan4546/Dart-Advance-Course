@@ -15,6 +15,7 @@
 // }
 
 //output: null, null
+
 //these two different codes work same but method is differenct in second code in which we use null aware access operator this can check input if the input is null then it will print null but if the input is not null then it will print its length accordingly 
 
 

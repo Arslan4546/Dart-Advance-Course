@@ -39,6 +39,8 @@
 
 // Output: Guest
 
-// iss mai ye hai k null aware assignment operator or null coalscing operator takreban same he kam krty hian
+// iss mai ye hai k null aware assignment operator or null coalscing operator takreban same he kam krty hian but null aware assignment operator value assign kr deta hai but null coalsing operator value direct = k left py jo variable hota hai uss ko direct asssign kr deta hai direct but null aware assignment operator bilkul aisa ni krta wo = k right py jo variable hai uss mai value rakhvata hai ye hai in dono mai farq
+
+
 
 

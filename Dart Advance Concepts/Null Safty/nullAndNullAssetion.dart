@@ -42,8 +42,8 @@
 
 // int? nullAable;
 
-//int nullSafe = 10;
-//int nullS = null; comile time error because ager nullsafe mai phly sy value hai to humm ye nhi kr skty
+// int nullSafe = 10;
+// int nullSafe = null; //comile time error because ager nullsafe mai phly sy value hai to humm ye nhi kr skty
 
 // void main(List<String> args) {
 //   nullAable = 12;
