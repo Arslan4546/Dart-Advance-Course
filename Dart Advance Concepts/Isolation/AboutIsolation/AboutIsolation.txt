@@ -1,0 +1,38 @@
+What is Isolation?
+In Dart, isolation refers to a mechanism to run code in parallel without sharing memory between multiple execution contexts. Each isolate has its own memory, state, and event loop, and isolates communicate by passing messages to one another.
+
+How Does Isolation Work?
+When you want to run some code in parallel with your main application code (e.g., for heavy computations), you can create an isolate. Each isolate runs in its own separate memory space, so data cannot be shared directly between isolates. Instead, isolates send messages to one another using ports.
+
+Dart ensures that isolates are completely independent from one another, and no data can be shared between them unless communicated explicitly using message-passing.
+
+How is Isolation Different from Threads?
+Isolates differ from traditional threads in a few key ways:
+
+No Shared Memory:
+
+Threads share the same memory space, meaning they can read/write the same variables, leading to concurrency issues like race conditions.
+Isolates, on the other hand, do not share memory. Each isolate runs in its own separate memory space, so data needs to be transferred via message passing.
+Concurrency Management:
+
+In threads, concurrency must be managed using locks, mutexes, or other synchronization mechanisms to avoid memory corruption.
+In isolates, no synchronization is needed because there's no shared memory.
+Message Passing:
+
+With threads, you can access shared variables directly.
+In isolates, communication happens via messages, and the data is copied between isolates (this makes isolates safer for concurrency but less efficient if passing large amounts of data).
+Why Use Isolation in Dart?
+Concurrency Without Complexity:
+
+Dart's isolates allow you to perform tasks concurrently without worrying about shared memory problems like race conditions.
+Performance Boost:
+
+Dart's isolates make it easier to run heavy computations (like parsing JSON, processing images, etc.) in the background, so they don't block the main UI thread, improving app responsiveness.
+Flutter Framework:
+
+Flutter apps require the UI to be responsive. Using isolates allows you to keep the UI smooth by offloading heavy tasks to separate execution contexts.
+How Does isolate.spawn() Work?
+Isolate.spawn() is used to create a new isolate. It takes two arguments:
+
+The entry function: A function that will be executed in the new isolate.
+The data: A piece of data that will be passed to the new isolate.
