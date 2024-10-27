@@ -28,6 +28,15 @@ Feel free to contribute, suggest topics, or reach out if you have any questions.
 
 ## Contact Me
 
-LinkedIn:https://www.linkedin.com/in/arslan4546/
-GitHub:https://github.com/Arslan4546
-Facebook:https://www.Facebook.com/Arslan4546
+### LinkedIn
+[Arslan's LinkedIn Profile](https://www.linkedin.com/in/arslan4546/)
+
+### Facebook
+[Arslan's Facebook Page](https://www.facebook.com/Arslan4546)
+
+### Instagram
+[Arslan's Instagram Profile](https://www.instagram.com/arslantariq4546/)
+
+---
+
+Thank you for visiting my GitHub! Connect with me on social media, and happy coding!
