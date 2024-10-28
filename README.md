@@ -30,17 +30,15 @@ Each section includes clear explanations, code snippets, and practical examples,
 ## 🔗 Contribute and Connect
 Feel free to contribute, suggest topics, or reach out if you have any questions. This repository is an evolving resource, meant to grow and adapt with the Dart community.
 
-## Contact Me
-
-### LinkedIn
-[Arslan's LinkedIn Profile](https://www.linkedin.com/in/arslan4546/)
-
-### Facebook
-[Arslan's Facebook Profile](https://www.facebook.com/Arslan4546)
-
-### Instagram
-[Arslan's Instagram Profile](https://www.instagram.com/arslantariq4546/)
-
 ---
 
+## 📬 Contact Me
+
+- **LinkedIn**: [Arslan Tariq](https://www.linkedin.com/in/arslan4546/)
+- **Instagram**: [Arslan Tariq](https://www.instagram.com/arslantariq4546/)
+-  **Threads**: [Arslan Tariq](https://www.threads.net/@arslantariq4546)
+- **Facebook**: [Arslan Tariq](https://www.facebook.com/Arslan4546)
+- **Email**: [arslantariq4546@gmail.com](mailto:arslantariq4546@gmail.com)
+
+---
 Thank you for visiting my GitHub! Connect with me on social media, and happy coding!
