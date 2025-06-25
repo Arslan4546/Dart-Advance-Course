@@ -3,25 +3,24 @@
 // 1. Constructor Redirecting Example
 // Here's a simple example that demonstrates constructor redirecting:
 
+class Person {
+  String name;
+  int age;
 
-// class Person {
-//   String name;
-//   int age;
+  // Main constructor
+  Person(this.name, this.age);
 
-//   // Main constructor
-//   Person(this.name, this.age);
+  // Redirecting constructor (default values)
+  Person.named() : this('John Doe', 30); // Redirecting to main constructor
+}
 
-//   // Redirecting constructor (default values)
-//   Person.named() : this('John Doe', 30); // Redirecting to main constructor
-// }
+void main() {
+  var person1 = Person('Alice', 25);
+  var person2 = Person.named();
 
-// void main() {
-//   var person1 = Person('Alice', 25);
-//   var person2 = Person.named();
-
-//   print('Person 1: ${person1.name}, ${person1.age}');
-//   print('Person 2: ${person2.name}, ${person2.age}');
-// }
+  print('Person 1: ${person1.name}, ${person1.age}');
+  print('Person 2: ${person2.name}, ${person2.age}');
+}
 // In the above example:
 
 // Person.named() is redirecting to the main constructor Person(this.name, this.age) by providing default values 'John Doe' and 30.
