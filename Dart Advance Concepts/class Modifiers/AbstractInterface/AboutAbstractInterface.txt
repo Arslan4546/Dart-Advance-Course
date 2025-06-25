@@ -3,4 +3,4 @@ abstract interface
 The most common use for the interface modifier is to define a pure interface. Combine the interface and abstract modifiers for an abstract interface class.
 
 Like an interface class, other libraries can implement, but can't inherit, a pure interface. Like an abstract class, a pure interface can have abstract members.
-// iss ka mtlab hai iss ka object ni bna kty or issy extends bhi ni kr skry but implement kr skty hain
+// iss ka mtlab hai iss ka object ni bna skty or issy extends bhi ni kr skry but implement kr skty hain

@@ -45,10 +45,10 @@ class Student {
 
 // class DB {
 //   static DB? _instance;
-//   DB._instant() {}
+//   DB._internal() {}
 
 //   static DB getInstance() {
-//     return _instance ??= DB._instant();
+//     return _instance ??= DB._internal();
 //   }
 
 // }
@@ -60,7 +60,7 @@ class Student {
 // class DB {
 //   Static private DB instance;
 
-//   DB(){}
+//  Private DB(){}
 
 //   static DB GetInstance(){
 

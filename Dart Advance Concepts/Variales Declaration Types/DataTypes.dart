@@ -33,7 +33,6 @@ void main(List<String> args) {
 
   final SliverChildrenListBuilderDelegete delegete =
       SliverChildrenListBuilderDelegete();
-
   //Constant Keyword:
   //Constant keyword is used with the comile time variables or objects
   //const: Compile-time constant. The value must be known at compile-time.
@@ -48,6 +47,8 @@ void main(List<String> args) {
   // Constant keyword:
   const c = 32;
 }
+
+
 
 // just making a class to explain the Type Inference concepts
 class SliverChildrenListBuilderDelegete {}
