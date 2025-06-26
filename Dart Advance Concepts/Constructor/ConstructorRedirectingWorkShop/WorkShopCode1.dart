@@ -32,7 +32,7 @@ class Teacher {
   }
 
   Teacher.name({required int teacherId, required String teacherName})
-      : this(teacherId, teacherName, 1231.123);
+    : this(teacherId, teacherName, 1231.123);
   Teacher.id(int teacherId)
-      : this.name(teacherId: teacherId, teacherName: 'Hassan');
+    : this.name(teacherId: teacherId, teacherName: 'Hassan');
 }
