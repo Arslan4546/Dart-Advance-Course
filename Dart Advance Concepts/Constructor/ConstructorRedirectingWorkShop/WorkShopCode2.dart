@@ -27,7 +27,7 @@
 // ==> Exampe 2 About Methods of making constructor with multiple parameters
 
 void main() {
-// var teachersPoint = TeachersPoint.origin();
+  // var teachersPoint = TeachersPoint.origin();
 
   //Student s = Student(12, 'Ali');
   // Student s = Student(rollNo: 12, name: 'Ali');
@@ -53,29 +53,29 @@ class Student {
 
   // ==> SIMPLE CONSTRUCTOR
 
-//   const Student(this.rollNo,this.name);
-//.......IF ALL THE FIELDS OF HE CLASS ARE FINAL WE CAN MAKE THE CONSTRUCTOR COMPILE TIME CONSTANT
+  //   const Student(this.rollNo,this.name);
+  //.......IF ALL THE FIELDS OF HE CLASS ARE FINAL WE CAN MAKE THE CONSTRUCTOR COMPILE TIME CONSTANT
 
-// Student({required this.rollNo , required this.name});
-// Student(this.rollNo,{ required this.name});
-//   Student({this.rollNo = 12 , required this.name});
-//   Student({this.rollNo = 12 ,  this.name = ''});
+  // Student({required this.rollNo , required this.name});
+  // Student(this.rollNo,{ required this.name});
+  //   Student({this.rollNo = 12 , required this.name});
+  //   Student({this.rollNo = 12 ,  this.name = ''});
 
   //==> PRIVATE DATA MEMEBER INITIALIZATION
 
-//   Student(this._rollNo,this.name);
+  //   Student(this._rollNo,this.name);
 
-//==> INITIALIZER LIST
+  //==> INITIALIZER LIST
 
-//1) PRIVATE DATA MEMBERS
-//2) FINAL MEMBERS
-//3) CONSTRUCTOR REDIRECT
+  //1) PRIVATE DATA MEMBERS
+  //2) FINAL MEMBERS
+  //3) CONSTRUCTOR REDIRECT
 
-//    const Student({required int studentRollNo}):_rollNo = studentRollNo;
+  //    const Student({required int studentRollNo}):_rollNo = studentRollNo;
 
-//         Student(this._rollNo, {required this.name });
+  //         Student(this._rollNo, {required this.name });
 
-//         Student(this._rollNo , String studentName) : name = studentName;
+  //         Student(this._rollNo , String studentName) : name = studentName;
 
   // Student(this._rollNo, this.name);
 }
