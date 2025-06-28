@@ -157,7 +157,8 @@ void main(List<String> args) {
 }
 
 void callFunction(FunctionType func) {
-  func("Arslan");
+  var s = func("Arslan");
+  print(s);
 }
 
 String outerFunction(String name) {
