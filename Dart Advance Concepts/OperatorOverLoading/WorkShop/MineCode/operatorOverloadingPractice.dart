@@ -5,10 +5,7 @@ class Vehicle {
   Vehicle(this.gear, this.wheels);
 
   Vehicle operator +(Vehicle other) {
-    return Vehicle(
-      wheels + other.wheels,
-      gear + other.gear,
-    );
+    return Vehicle(wheels + other.wheels, gear + other.gear);
   }
 
   @override
@@ -20,7 +17,7 @@ class Vehicle {
 class Truck extends Vehicle {
   Truck(super.gear, super.wheels);
 
-  Truck operator +(covariant Truck other) {
+  Truck operator +(covariant Vehicle other) {
     return Truck(wheels - other.wheels, gear - other.gear);
   }
 }
