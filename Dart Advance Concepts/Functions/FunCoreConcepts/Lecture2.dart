@@ -2,22 +2,20 @@
 
 // Higher Order Functions: (jab ik function dosry function k parameter mai ya return mai use ho rha ho to wo highter order functions hota hai)
 
-//void main(List<String> args) {
-//callFunction1(lhr);
+// void main(List<String> args) {
+//   callFunction1(
+//     lhr,
+//   ); // this will work bcz lhr function does not return any value
 
-/// this will work bcz lhr function does return any value
+//   callFunction1(() => bwp("Arslan Tariq"));
+//   // this gives runtime error because it demands a String in parameter but you dont give any string in the callFuncation1() method so it gives error
 
-//callFunction1(bwp);
+//   callFunction1(() => mlt(12, 34));
 
-//// this gives runtime error because it demands a String in parameter but you dont give any string in the callFuncation1() method so it gives error
+  // this also gives runtime error because it demands a two integer in parameter but you dont give any integer in the callFuncation1() method so it gives error
 
-//callFunction1(mlt);
-
-//// this also gives runtime error because it demands a two integer in parameter but you dont give any integer in the callFuncation1() method so it gives error
-///
-// so ager callFunction1 Demands kry parameter ka to ussy parameter deny chahyee wrna wo runtime per error dy dy ga or ye compile time error issil yee ni deta q k callFunction1() ka parameter Generalize hai iss lyee wo kissi bhi function ko accept kr leta hai (Function tamam functions ki parents class hai na to issi lyee).
-
-//}
+  //so ager callFunction1 Demands kry parameter ka to ussy parameter deny chahyee wrna wo runtime per error dy dy ga or ye compile time error issil yee ni deta q k callFunction1() ka parameter Generalize hai iss lyee wo kissi bhi function ko accept kr leta hai (Function tamam functions ki parents class hai na to issi lyee).
+// }
 
 // void callFunction1(Function f) {
 //   f();
@@ -133,7 +131,6 @@
 // void main(List<String> args) {
 //   String result = mainFun(sum);
 //   print(result);
-  
 // }
 
 // int sum(int a, int b) {
