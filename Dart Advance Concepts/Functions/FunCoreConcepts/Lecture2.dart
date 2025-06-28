@@ -147,3 +147,19 @@
 //     return printMyName("Mannan");
 //   }
 // }
+
+// a demo or practice function for better understanding
+
+typedef FunctionType = String Function(String);
+
+void main(List<String> args) {
+  callFunction(outerFunction);
+}
+
+void callFunction(FunctionType func) {
+  func("Arslan");
+}
+
+String outerFunction(String name) {
+  return "Hello, $name!";
+}
