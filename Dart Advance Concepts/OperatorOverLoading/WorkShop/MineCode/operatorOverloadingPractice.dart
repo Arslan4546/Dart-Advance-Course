@@ -26,6 +26,12 @@ void main(List<String> args) {
   Vehicle v1 = Vehicle(2, 4);
   Vehicle v2 = Vehicle(2, 4);
   var v3 = v1 + v2;
+  Truck t1 = Truck(3, 6);
+  Truck t2 = Truck(3, 6);
+  var t3 = t1 + t2;
+  Vehicle vehicle = Truck(3, 6);
+  print(vehicle);
+  print(t3);
   print(v3);
 }
 
