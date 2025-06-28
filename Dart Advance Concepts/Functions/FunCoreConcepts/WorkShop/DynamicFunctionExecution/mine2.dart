@@ -2,7 +2,8 @@ typedef OneParameter = int Function(int number);
 
 void main(List<String> args) {
   var f = mainFun((int n) {
-    return n;
+    print("this is the function body");
+    return n + 10;
   });
   print(f);
 }

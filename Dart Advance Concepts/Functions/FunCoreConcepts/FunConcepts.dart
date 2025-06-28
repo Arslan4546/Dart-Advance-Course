@@ -16,6 +16,10 @@ class Student {
   void call() {
     print("call fucntion is called");
   }
+
+  void arslan() {
+    print("Arslan function is called");
+  }
 }
 
 void main(List<String> args) {
