@@ -12,9 +12,9 @@
 
 //   callFunction1(() => mlt(12, 34));
 
-  // this also gives runtime error because it demands a two integer in parameter but you dont give any integer in the callFuncation1() method so it gives error
+// this also gives runtime error because it demands a two integer in parameter but you dont give any integer in the callFuncation1() method so it gives error
 
-  //so ager callFunction1 Demands kry parameter ka to ussy parameter deny chahyee wrna wo runtime per error dy dy ga or ye compile time error issil yee ni deta q k callFunction1() ka parameter Generalize hai iss lyee wo kissi bhi function ko accept kr leta hai (Function tamam functions ki parents class hai na to issi lyee).
+//so ager callFunction1 Demands kry parameter ka to ussy parameter deny chahyee wrna wo runtime per error dy dy ga or ye compile time error issil yee ni deta q k callFunction1() ka parameter Generalize hai iss lyee wo kissi bhi function ko accept kr leta hai (Function tamam functions ki parents class hai na to issi lyee).
 // }
 
 // void callFunction1(Function f) {
@@ -46,25 +46,25 @@
 
 // void main(List<String> args) {
 //   callFunction1(bwp);
-//   callFunction1(lhr);
-//   callFunction1(mlt);
-//   callFunction1(krch);
+//   callFunction2(lhr);
+//   callFunction3(mlt);
+//   callFunction4(krch);
 // }
 
 // void callFunction1(bwpTypeDef bwpT) {
 //   print(bwpT("bwp function is called!"));
 // }
 
-// void callFunction1(lahoreTypeDef lhrT) {
+// void callFunction2(lahoreTypeDef lhrT) {
 //   lhr();
 // }
 
-// void callFunction1(mltTypeDef mltT) {
+// void callFunction3(mltTypeDef mltT) {
 //   int result = mlt(12, 8);
 //   print(result);
 // }
 
-// void callFunction1(krchTypeDef krchT) {
+// void callFunction4(krchTypeDef krchT) {
 //   print(krchT("Arslan", "Tariq"));
 // }
 
@@ -121,7 +121,6 @@
 // num mainFun(Function f1, Function f2) {
 //   return f2(12, 34);
 // }
-
 
 // Another Example of Higher order Functions
 
