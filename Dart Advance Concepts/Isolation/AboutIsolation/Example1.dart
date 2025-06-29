@@ -4,7 +4,7 @@
 import 'dart:isolate';
 
 // Function to perform a heavy computation in the isolate
-void compute(SendPort sendPort) {
+void compute(SendPort send) {
   int result = 0;
   for (int i = 0; i < 100000000; i++) {
     // Future.delayed(
@@ -13,7 +13,7 @@ void compute(SendPort sendPort) {
 
     result += i;
   }
-  sendPort.send(result); // Send result back to the main isolate
+  send.send(result); // Send result back to the main isolate
 }
 
 void main() async {
