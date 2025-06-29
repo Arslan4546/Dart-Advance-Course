@@ -7,7 +7,9 @@ import 'dart:isolate';
 void compute(SendPort sendPort) {
   int result = 0;
   for (int i = 0; i < 100000000; i++) {
-    // await Future.delayed(Duration(seconds: 1)); humm idhr wait ni laga skty q k ye jab tak wait kry ga main ka isolate apna kr k terminate ho jyee ga to isi wja sy ni chaly ga funciton wait krny k wja sy
+    // Future.delayed(
+    //   Duration(seconds: 1),
+    // ); //humm idhr wait ni laga skty q k ye jab tak wait kry ga main ka isolate apna kr k terminate ho jyee ga to isi wja sy ni chaly ga funciton wait krny k wja sy
 
     result += i;
   }
