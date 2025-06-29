@@ -2,7 +2,6 @@
 // This example demonstrates an isolate performing periodic tasks in the background (e.g., fetching data every few seconds).
 
 import 'dart:isolate';
-import 'dart:async';
 
 // Background task that runs periodically in the isolate
 void periodicTask(SendPort sendPort) {

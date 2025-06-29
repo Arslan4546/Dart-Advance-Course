@@ -1,6 +1,5 @@
 // Example:
 
-import 'dart:async';
 import 'dart:isolate';
 
 // The function that will run in the new isolate
