@@ -8,49 +8,51 @@
 
 // Defining an abstract class that works like an interface
 
-// abstract class Animal {
-//   // Abstract method, no implementation provided
-//   void sound();
+abstract class Animal {
+  // Abstract method, no implementation provided
+  void sound();
 
-//   // Default method with implementation
-//   void sleep() {
-//     print("The animal is sleeping.");
-//   }
-// }
+  // Default method with implementation
+  void sleep() {
+    print("The animal is sleeping.");
+  }
+}
 
-// // Class Dog implements the Animal interface
-// class Dog implements Animal {
-//   @override
-//   void sound() {
-//     print("Bark");
-//   }
+// Class Dog implements the Animal interface
+class Dog implements Animal {
+  @override
+  void sound() {
+    print("Bark");
+  }
 
-//   @override
-//   void sleep() {
-//     print("The dog is sleeping peacefully.");
-//   }
-// }
+  @override
+  void sleep() {
+    print("The dog is sleeping peacefully.");
+  }
+}
 
-// // Class Cat implements the Animal interface
-// class Cat implements Animal {
-//   @override
-//   void sound() {
-//     print("Meow");
-//   }
+// Class Cat implements the Animal interface
+class Cat implements Animal {
+  @override
+  void sound() {
+    print("Meow");
+  }
 
-//   // This class will inherit the default sleep method if not overridden.
-// }
+  @override
+  void sleep() {}
+  // This class will inherit the default sleep method if not overridden.
+}
 
-// void main() {
-//   // Creating objects and calling interface methods
-//   Animal dog = Dog();
-//   dog.sound();  // Output: Bark
-//   dog.sleep();  // Output: The dog is sleeping peacefully.
+void main() {
+  // Creating objects and calling interface methods
+  Animal dog = Dog();
+  dog.sound(); // Output: Bark
+  dog.sleep(); // Output: The dog is sleeping peacefully.
 
-//   Animal cat = Cat();
-//   cat.sound();  // Output: Meow
-//   cat.sleep();  // Output: The animal is sleeping.
-// }
+  Animal cat = Cat();
+  cat.sound(); // Output: Meow
+  cat.sleep(); // Output: The animal is sleeping.
+}
 
 
 // Explanation of Interfaces in Dart (Dart Core Concepts):

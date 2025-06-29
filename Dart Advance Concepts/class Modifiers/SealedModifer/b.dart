@@ -1,4 +1,4 @@
-import 'a.dart';
+
 
 class Car extends Vehicle {}
 
@@ -18,6 +18,7 @@ String getVehicleSound(Vehicle vehicle) {
     Car() => 'vroom',
     Truck() => 'VROOOOMM',
     Bicycle() => 'bicycle',
+    _ => 'unknown',
   };
-}
+}}
 // it means you cannot create the object of the sealed class but create the objecct of sealed subtype class and also cannot extends and implements the sealed class with other classes

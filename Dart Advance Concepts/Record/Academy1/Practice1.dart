@@ -33,7 +33,5 @@ void main(List<String> args) {
 }
 
 (int, String) swap((int, double) s) {
-  print(s);
-
   return (12, "Arslan");
 }
