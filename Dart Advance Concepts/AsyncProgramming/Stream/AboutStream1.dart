@@ -15,21 +15,13 @@ void main(List<String> args) {
     (event) => print(event),
   );
 
-  var stringStream = stream.map(
-    (event) => "This is the event $event",
-  );
+  var stringStream = stream.map((event) => "This is the event $event");
 
-  stringStream.listen(
-    (event) => print(event),
-  );
+  stringStream.listen((event) => print(event));
 
-  var evenStream = stream.where(
-    (event) => event.isEven,
-  );
+  var evenStream = stream.where((event) => event.isEven);
 
-  evenStream.listen(
-    (event) => print(event),
-  );
+  evenStream.listen((event) => print(event));
 }
 
 Stream<int> generateNumber(int max) async* {
