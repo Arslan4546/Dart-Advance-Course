@@ -1,8 +1,6 @@
-==> Relational
+// ==> Relational
 
-== expression
-
-< expression
+// ==> expression
 
 // Relational patterns compare the matched value to a given constant using any of the equality or relational operators: ==, !=, <, >, <=, and >=.
 
@@ -20,6 +18,6 @@ String asciiCharType(int char) {
     == space => 'space',
     > space && < zero => 'punctuation',
     >= zero && <= nine => 'digit',
-    _ => ''
+    _ => '',
   };
 }
